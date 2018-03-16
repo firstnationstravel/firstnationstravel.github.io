@@ -1,4 +1,4 @@
-# firstnationstravel.github.io: a Google Map app
+# firstnationstravel.github.io
 
 A testbed for an app for travel info about First Nations in Canada. To do: Toggle overlay of First Nations on/off, calculate time and distance and suggest items of interest. The blank page below the map will be used for a table of additional locations.
 
