@@ -61,12 +61,21 @@
           border-color: rgba(124,124,124,.65);
           background-color: rgba(124,124,124,.65);
         }
-
+        #map-app-menu.navbar-default .dropdown-item {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 18px;
+        }
         #map-app-menu.navbar-default .dropdown-item:focus,
         #map-app-menu.navbar-default .dropdown-item:hover,
         #map-app-menu.navbar-default .dropdown-item.active,
         #map-app-menu.navbar-default .dropdown-item.active:focus,
         #map-app-menu.navbar-default .dropdown-item.active:hover {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 18px;
           color: rgba(255, 255, 255, 1) !important;
           text-decoration: none;
           background-color: transparent;
@@ -168,7 +177,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" style="font-family: Roboto Slab; font-weight: 700; font-size:18px;" href="#home">
-                  <i class="mdi mdi-18px mdi-feather"></i>First Nations Travel
+                  <i class="mdi mdi-18px mdi-feather"></i><span class="type-it"></span>
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-map-app">
                   <i class="mdi mdi-18px mdi-menu" aria-hidden="true" style="color: white;"></i>
@@ -386,5 +395,17 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/videojs-resolution-switcher/0.4.2/videojs-resolution-switcher.min.css"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/videojs-playLists/0.2.0/videojs-playlists.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.4.1/Youtube.min.js"></script>
+
+    <!-- Animated Typing Utility -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.6.1/typeit.min.js"></script>
+
+    <script>
+    <!-- TypeIt Logo -->
+    new TypeIt('.type-it', {
+        speed: 125,
+        cursor: false,
+        strings: 'First Nations Travel'
+    });
+    </script>
 </body>
 </html>
