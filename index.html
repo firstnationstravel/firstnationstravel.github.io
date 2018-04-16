@@ -41,6 +41,13 @@
         }
         h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab'; }
 
+        /* Logo Style */
+        #input {
+          display: inline-block;
+          width:185px;
+          color: white;
+        }
+
         /* Fill the window with the map. */
         #map { height: 100%; }
 
@@ -50,7 +57,9 @@
         }
         #map-app-menu.navbar-default .navbar-brand {
             color: rgba(255, 255, 255, 1);
-            font-size:24;
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            font-size:18;
         }
         #map-app-menu.navbar-default,
         .dropdown-menu {
@@ -217,8 +226,8 @@
     <nav id="map-app-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" style="font-family: Roboto Slab; font-weight: 700; font-size:18px;" href="#home">
-                  <i class="mdi mdi-18px mdi-feather"></i><span class="type-it"></span>
+                <a class="navbar-brand" href="#home">
+                  <i class="mdi mdi-18px mdi-feather"></i><span id="input"></span>
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-map-app">
                   <i class="mdi mdi-18px mdi-menu" aria-hidden="true" style="color: white;"></i>
@@ -5541,8 +5550,8 @@
 
     <script>
     <!-- TypeIt Logo -->
-    new TypeIt('.type-it', {
-        speed: 125,
+    new TypeIt('#input', {
+        speed: 150,
         cursor: false,
         strings: 'First Nations Travel'
     });
